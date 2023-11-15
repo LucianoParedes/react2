@@ -1,0 +1,66 @@
+/* style.css */
+
+/* Reset some default styles */
+body, h1, h2, ul, li {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Item styles */
+  .CardItem {
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin: 10px;
+    width: 250px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+  }
+  
+  /* Item header styles */
+  .Header {
+    margin-bottom: 10px;
+  }
+  
+  .ItemHeader {
+    font-size: 18px;
+    color: #333;
+  }
+  
+  /* Item image styles */
+  .ItemImg {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+  }
+  
+  /* Item info styles */
+  .Info {
+    font-size: 14px;
+    color: #777;
+    margin-bottom: 5px;
+  }
+  
+  /* Item footer styles */
+  .ItemFooter {
+    margin-top: 10px;
+  }
+  
+  /* Link styles */
+  .option {
+    text-decoration: none;
+    color: #007bff; /* Change to your preferred link color */
+    font-weight: bold;
+  }
+  
+  .option:hover {
+    color: #0056b3; /* Change to your preferred link hover color */
+  }
+  
+  /* Optional: Add a media query for responsiveness */
+  @media screen and (max-width: 768px) {
+    .CardItem {
+      width: 80%;
+    }
+  }

@@ -1,0 +1,53 @@
+body,
+h1,
+h2,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  padding: 10px 20px;
+  color: white;
+}
+
+.navbar-container img {
+  width: 100px;
+}
+
+.ListContainer {
+  display: flex;
+}
+
+.Option,
+.ActiveOption {
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  margin-right: 10px;
+  font-size: 16px;
+}
+
+.Option:hover {
+  color: #ffd700;
+}
+
+.ActiveOption {
+  border-bottom: 2px solid #ffd700;
+}
+
+@media screen and (max-width: 768px) {
+  .navbar-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .ListContainer {
+    margin-top: 10px;
+  }
+}
