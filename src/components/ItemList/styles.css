@@ -1,59 +1,51 @@
-/* styles.css */
+body,
+h1,
+h2,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
 
-/* Reset some default styles */
-body, h1, h2, ul, li {
-    margin: 0;
-    padding: 0;
-  }
-  
-  /* ItemList styles */
+.ListGroup {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 20px 0;
+}
+
+.Item {
+  border: 1px solid #ddd;
+  padding: 20px;
+  margin: 10px;
+  width: 200px;
+  text-align: center;
+}
+
+.Item img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.Item h3 {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.Item p {
+  font-size: 14px;
+  color: #333;
+}
+
+@media screen and (max-width: 768px) {
   .ListGroup {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    margin: 20px 0;
+    flex-direction: column;
+    align-items: center;
   }
-  
-  /* Optional: Add styling for Item component (assuming it's a component) */
-  /* You may need to style your Item component separately based on its structure */
-  
-  /* Example styling for the Item component */
+
   .Item {
-    border: 1px solid #ddd;
-    padding: 20px;
-    margin: 10px;
-    width: 200px;
-    text-align: center;
+    width: 80%;
   }
-  
-  /* Example styling for the Item image */
-  .Item img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 8px;
-    margin-bottom: 10px;
-  }
-  
-  /* Example styling for the Item title */
-  .Item h3 {
-    font-size: 16px;
-    margin-bottom: 10px;
-  }
-  
-  /* Example styling for the Item price */
-  .Item p {
-    font-size: 14px;
-    color: #333;
-  }
-  
-  /* Optional: Add a media query for responsiveness */
-  @media screen and (max-width: 768px) {
-    .ListGroup {
-      flex-direction: column;
-      align-items: center;
-    }
-  
-    .Item {
-      width: 80%;
-    }
-  }
+}

@@ -1,0 +1,29 @@
+.CartItem {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+    padding: 10px;
+  }
+  
+  .CartItemImg {
+    max-width: 80px;
+    margin-right: 10px;
+  }
+  
+  .CartItemInfo {
+    flex: 1;
+  }
+  
+  .RemoveButton {
+    background-color: #e74c3c;
+    color: #fff;
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  }
+  
+  .RemoveButton:hover {
+    background-color: #c0392b;
+  }

@@ -20,7 +20,7 @@ const NavBar = () => {
           Mothers
         </NavLink>
         <NavLink
-          to={`/category/placas de video`}
+          to={`/category/placas`}
           className={({ isActive }) => (isActive ? "ActiveOption" : "Option")}>
           Placas de video
         </NavLink>

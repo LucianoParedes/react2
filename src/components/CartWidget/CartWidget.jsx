@@ -1,13 +1,19 @@
-import * as Icon from "react-bootstrap-icons";
+import "./style.css";
+import { useContext } from "react";
+import {CartContext} from "../../context/CartContext";
+import { Link } from "react-router-dom";
+import cart from "./assets/cart.svg";
 
 const CartWidget = () => {
+  const { totalQuantity } = useContext(CartContext);
   return (
-    <div>
-      <Icon.Cart/>
-      <div>
-        <span>1</span>
-      </div>
-    </div>
+    <Link
+      to="/cart"
+      className="CartWidget"
+      style={{ display: totalQuantity > 0 ? "block" : "none" }}>
+      <img className="CartImg" src={cart} alt="cart-widget" />
+      {totalQuantity}
+    </Link>
   );
 };
 
